@@ -12,12 +12,12 @@ Welcome to the server part of the Mini Twitter Clone project! This is the backen
 
 ## Setup and Installation
 1. **Clone the Repository**: 
-git clone https://github.com/YOUR_USERNAME/ivykids-twitter-server.git
+`git clone https://github.com/ec-026/ivykids-twitter-server`
 
 2. **Install Dependencies**:
 Navigate to the project folder and install the necessary dependencies using npm or yarn.
-cd ivykids-twitter-server
-npm install
+`cd ivykids-twitter-server`
+`npm install`
 
 3. **Configuration**:
 - Create a `.env` file and set up the following environment variables:
@@ -26,10 +26,10 @@ npm install
   - `PORT`: The port on which the server will run (default is 5000).
 
 4. **Start the Server**:
-npm start
+`npm start`
 
 5. **GraphQL Playground**:
-Access the GraphQL Playground at `https://ivykids-twitter-server-production.up.railway.app` for testing queries and mutations.
+Access the [GraphQL Playground at](https://ivykids-twitter-server-production.up.railway.app) for testing queries and mutations.
 
 ## Client Codebase
 To explore the client-side codebase and the user interface, please visit the [Mini Twitter Clone - Client repository](https://github.com/ec-026/ivykids-twitter-client).
