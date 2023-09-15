@@ -15,6 +15,8 @@ const MONGODB_URI = process.env.MONGODB_URI;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  introspection: true,
+  playground: true,
   context: ({ req }) => ({ req, pubsub }),
 });
 
