@@ -1,3 +1,3 @@
 module.exports = {
-  SECRET_KEY: 'some very secret key'
+  SECRET_KEY: 'twitter never dies'
 };
