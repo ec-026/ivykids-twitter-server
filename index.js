@@ -6,8 +6,6 @@ const mongoose = require('mongoose');
 
 const typeDefs = require('./graphql/typeDefs');
 const resolvers = require('./graphql/resolvers');
-const { ApolloServerPluginLandingPageLocalDefault } = require('@apollo/server/plugin/landingPage/default');
-
 
 const pubsub = new PubSub();
 
@@ -17,17 +15,10 @@ const MONGODB_URI = process.env.MONGODB_URI;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  plugins: [
-    // Use the appropriate landing page plugin based on NODE_ENV
-    process.env.NODE_ENV === 'production'
-      ? ApolloServerPluginLandingPageProductionDefault({
-          graphRef: 'my-graph-id@my-graph-variant',
-          footer: false,
-        })
-      : ApolloServerPluginLandingPageLocalDefault({ footer: false }),
-  ],
+  introspection: true,
+  playground: true,
+  context: ({ req }) => ({ req, pubsub }),
 });
-
 
 mongoose
   .connect(MONGODB_URI, { useNewUrlParser: true })
