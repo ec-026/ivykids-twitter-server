@@ -4,13 +4,11 @@ Welcome to the server part of the Mini Twitter Clone project! This is the backen
 
 ## Technologies Used
 - **Node.js**: The server is built using Node.js, a JavaScript runtime.
-- **Express.js**: Express is used for building the server and handling HTTP requests.
 - **MongoDB**: MongoDB is the database of choice, where user data, tweets, and follower information are stored.
 - **Mongoose**: Mongoose is used to interact with MongoDB, providing a convenient way to define schemas and models.
 - **GraphQL**: GraphQL is utilized as the API gateway for efficient data retrieval and management.
 - **Apollo Server**: Apollo Server is used to create a GraphQL server for handling queries and mutations.
 - **JSON Web Tokens (JWT)**: JWTs are used for secure user authentication.
-- **GraphQL Subscriptions**: GraphQL Subscriptions enable real-time features like live notifications.
 
 ## Setup and Installation
 1. **Clone the Repository**: 
