@@ -31,7 +31,7 @@ Navigate to the project folder and install the necessary dependencies using npm 
 5. **GraphQL Playground**:
 Access the [GraphQL Playground](https://ivykids-twitter-server-production.up.railway.app) for testing queries and mutations.
 
-## Client Codebase
+## Client Codebas
 To explore the client-side codebase and the user interface, please visit the [Mini Twitter Clone - Client repository](https://github.com/ec-026/ivykids-twitter-client).
 
 ## Live Site
